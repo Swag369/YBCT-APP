@@ -20,6 +20,19 @@ const App = () => {
               <Route path = "/About" component = {About} />
               <Route path = "/Resources" component = {Resources} />
             </Switch>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
+            <h1> </h1>
             <Footer>
             </Footer>
           </div>

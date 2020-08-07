@@ -32,7 +32,7 @@ const Navigation = () => {
         <div className = {`navbar${sticky.isSticky ? " sticky" : ""}`} ref = {headerRef}>
             <img src = {require("/Users/sahi/my-app/src/current_logo.jpg")} className = "logo"></img>
             <h1 className = "title">Youth Bleeding Control Training</h1>
-            <Link to = "#contact" className = "tab">Contact</Link>
+            <a to = "#contact" className = "tab">Contact</a>
             <Link to = "/Resources" className = "tab">Resources</Link>
             <Link to = "/About" className = "tab">About</Link>
             <Link to = "/" className = "tab">Home</Link>
