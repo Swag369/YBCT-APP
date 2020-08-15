@@ -5,7 +5,6 @@ class ImageSlider extends React.Component {
 		super()
 		this.state = {
 			current_index: 1,
-			image_width: 0,
 			image_urls: [
 				'https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png',
 				'https://upload.wikimedia.org/wikipedia/commons/5/5b/India_Gate_600x400.jpg' ,
@@ -53,13 +52,14 @@ class ImageSlider extends React.Component {
 	}
 
 	handleClick (step) {
+		const w = document.getElementById("firstClone").clientWidth
 		const new_index = this.state.current_index + step
 		if (new_index < 0 || new_index > this.state.image_urls.length + 1) return
 		this.setState(prevState => ({
 			current_index: new_index,
 			styles: {...this.state.styles, slide_styles: {...this.state.styles.slide_styles, 
 			transition: "transform 0.6s ease-in-out",
-			transform: "translateX(" + new_index * -this.state.image_width + "px)"}} 
+			transform: "translateX(" + new_index * -w + "px)"}} 
 		}))
 	}
 
@@ -67,20 +67,20 @@ class ImageSlider extends React.Component {
 		const w = document.getElementById("firstClone").clientWidth
 		this.setState({
 			current_index: 2,
-			image_width: w,
 			styles: {...this.state.styles, slide_styles: {...this.state.styles.slide_styles, 
 			transform : "translateX(" + 2 * -w + "px)"}}
 		})
 	}
 
 	reelEnd () {
+		const w = document.getElementById("firstClone").clientWidth
 		const image_objects = document.querySelectorAll('.ImageSlider img')
 		if (image_objects[this.state.current_index].id === 'lastClone') {
 			this.setState(prevState => ({
 				current_index: image_objects.length - 2,
 				styles: {...this.state.styles, slide_styles: {...this.state.styles.slide_styles, 
 				transition: "none",
-				transform: "translateX(" + (image_objects.length - 2) * -this.state.image_width + "px)"}} 
+				transform: "translateX(" + (image_objects.length - 2) * -w + "px)"}} 
 			}))	
 		}
 		if (image_objects[this.state.current_index].id === 'firstClone') {
@@ -88,7 +88,7 @@ class ImageSlider extends React.Component {
 				current_index: 1,
 				styles: {...this.state.styles, slide_styles: {...this.state.styles.slide_styles, 
 				transition: "none",
-				transform: "translateX(" +  -this.state.image_width + "px)"}} 
+				transform: "translateX(" +  -w + "px)"}} 
 			}))	
 		}
 	}
