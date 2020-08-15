@@ -9,7 +9,6 @@ class ImageSlider extends React.Component {
 			image_urls: [
 				'https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png',
 				'https://upload.wikimedia.org/wikipedia/commons/5/5b/India_Gate_600x400.jpg' ,
-				'https://upload.wikimedia.org/wikipedia/commons/5/5b/India_Gate_600x400.jpg' ,
 				'https://upload.wikimedia.org/wikipedia/commons/6/69/600x400_kastra.jpg'
 			],
 			styles: {
@@ -35,7 +34,7 @@ class ImageSlider extends React.Component {
 					fontSize: 30,
 					color: "#FFFFFF",
 					opacity: 0.7,
-					cursor: "pointer"
+					cursor: "pointer",
 				},
 				next_button_styles: {
 					position: "absolute",
@@ -67,9 +66,10 @@ class ImageSlider extends React.Component {
 	componentDidMount() {
 		const w = document.getElementById("firstClone").clientWidth
 		this.setState({
+			current_index: 2,
 			image_width: w,
 			styles: {...this.state.styles, slide_styles: {...this.state.styles.slide_styles, 
-			transform : "translateX(" + this.state.current_index * -w + "px)"}}
+			transform : "translateX(" + 2 * -w + "px)"}}
 		})
 	}
 
