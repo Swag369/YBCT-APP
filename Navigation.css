@@ -10,6 +10,8 @@
   top: 0;
   left: 0;
   animation: smoothScroll 1s forwards;
+  transition: all 0.3s ease;
+  z-index: 11;
 }
 
 @keyframes smoothScroll {
