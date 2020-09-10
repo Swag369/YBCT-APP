@@ -25,9 +25,9 @@ const About = () => {
 				</div>
 				<div className = "container" id = "members" style = {{float: "left"}}>
 					<h1>Our Members</h1>
-					<AboutProfile name1 = "Sahi Chitrapu" img1 = {require("/Users/sahi/ybct/src/images/sahi.png")} name2 = "Vikram Khandelwal" name3 = "Saketh Akella"/>
-					<AboutProfile name1 = "Nikhil Devisetty" img1 = {require("/Users/sahi/ybct/src/images/nikhil.png")} name2 = "Aditya Shrey" img2 = {require("/Users/sahi/ybct/src/images/shrey.jpeg")} name3 = "Aditya Khowal"/>
-					<AboutProfile name1 = "Vedant Chavan" name2 = "Wesley Luk" name3 = "Ishan Bansal"/>
+					<AboutProfile name1 = "Sahi Chitrapu" img1 = {require("/Users/sahi/ybct/src/images/sahi.png")} position1 = "Web Development" name2 = "Vikram Khandelwal" position2 = "Web Development" name3 = "Saketh Akella" position3 = "Web Development"/>
+					<AboutProfile name1 = "Nikhil Devisetty" img1 = {require("/Users/sahi/ybct/src/images/nikhil.png")} position1 = "Outreach" name2 = "Aditya Shrey" img2 = {require("/Users/sahi/ybct/src/images/shrey.jpeg")} position2 = "Outreach" name3 = "Aditya Khowal" position3 = "Outreach"/>
+					<AboutProfile name1 = "Vedant Chavan" position1 = "" name2 = "Wesley Luk" position2 = "Research Lead" name3 = "Ishan Bansal" position3 = "President"/>
 				</div>
 			</div>
 	    </div>
