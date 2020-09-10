@@ -4,11 +4,11 @@ import './Navigation.css';
 
 
 const Navigation = () => {
-
-    const [sticky, setSticky] = useState({isSticky: false, offset: 0 })
+    const [page, setPage] = useState({currentPage: "Home"})
+/*
     const headerRef = useRef(null)
 
-    const handleScroll = (eventO, eventH) => {
+   const handleScroll = (eventO, eventH) => {
         if(window.pageYOffset > (eventO + eventH)) {
             setSticky({ isSticky: true, offset: eventH})
         } else {
@@ -27,16 +27,33 @@ const Navigation = () => {
             window.removeEventListener("scroll", handleScrollEvent)
         }
     }, [])
+*/
 
+    const handleHome = () => {
+        setPage({ currentPage: "Home" })
+    }
+    const handleAbout = () => {
+        setPage({ currentPage: "About"})
+    }
+    const handleResources = () => {
+        setPage({ currentPage: "Resources" })
+    }
     return (
-        <div className = {`navbar${sticky.isSticky ? " sticky" : ""}`} ref = {headerRef}>
-            <img src = {require("/Users/sahi/my-app/src/current_logo.jpg")} className = "logo"></img>
-            <h1 className = "title">Youth Bleeding Control Training</h1>
-            <a to = "#contact" className = "tab">Contact</a>
-            <Link to = "/Resources" className = "tab">Resources</Link>
-            <Link to = "/About" className = "tab">About</Link>
-            <Link to = "/" className = "tab">Home</Link>
-        </div>
+        <header>
+            <div className = "navbar">
+                <img src = {require("/Users/sahi/ybct/src/current_logo.jpg")} className = "logo"></img>
+                <h2 className = "title">Youth Bleeding Control Training</h2>
+                <Link to = "/" className = "tab" onClick = {handleHome} style = {page.currentPage == "Home" ? {color: "red"} : {color: "black"}}>Home</Link>
+                <Link to = "/About" className = "tab" onClick = {handleAbout} style = {page.currentPage == "About" ? {color: "red"} : {color: "black"}}>About</Link>
+                <Link to = "/Resources" className = "tab" onClick = {handleResources} style = {page.currentPage == "Resources" ? {color: "red"} : {color: "black"}}>Resources</Link>
+                <a href = "https://www.instagram.com/ybct_saveslives/" target = "_blank" className = "social">
+                    <img src = {require("/Users/sahi/ybct/src/images/iconfinder_1_Instagram_colored_svg_1_5296765.png")} width = "40" height = "40"></img>
+                </a>
+                <a href = "" className = "social">
+                    <img src = {require("/Users/sahi/ybct/src/images/iconfinder_1_Facebook_colored_svg_copy_5296499.png")} width = "40" height = "40"></img>
+                </a>
+            </div>
+        </header>
     )
 }
 

@@ -6,17 +6,18 @@ class ImageSlider extends React.Component {
 		this.state = {
 			current_index: 1,
 			image_urls: [
-				'https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png',
-				'https://upload.wikimedia.org/wikipedia/commons/5/5b/India_Gate_600x400.jpg' ,
-				'https://upload.wikimedia.org/wikipedia/commons/6/69/600x400_kastra.jpg'
+				require("/Users/sahi/ybct/src/images/slide1.jpeg"),
+				require("/Users/sahi/ybct/src/images/slide2.jpeg"),
+				require("/Users/sahi/ybct/src/images/slide3.jpeg")
 			],
 			styles: {
 				container_styles: {
 					position: "relative",
-					width: "600px",
-					margin: "10px auto",
+					width: "800px",
 					overflow: "hidden",
-					border: "solid #6441a5 5px",
+					margin: "10px auto",
+					height: "600px",
+					float: "right"
 				},
 				slide_styles: {
 					display: "flex",
@@ -24,7 +25,7 @@ class ImageSlider extends React.Component {
 					height: "auto",
 					transform: "",
 					transition: ""
-				},
+				},	
 				prev_button_styles: {
 					position: "absolute",
 					top: "45%",
@@ -110,17 +111,23 @@ class ImageSlider extends React.Component {
 					     onTransitionEnd={this.reelEnd}>
 
 						<img src={this.state.image_urls[this.state.image_urls.length-1]}
+							 width = "800"
+							 height = "600"
 							 id = "lastClone"
 							 alt = "dummyImage" 
-							 key = "lastClone"/>
+							 key = "lastClone"
+							 />
 
 						{this.state.image_urls.map(link => (
-						<img src={link} alt = "dummyImage"  key={link} />))}
+						<img src={link}  width = "800" height = "600" alt = "dummyImage"  key={link}/>))}
 
 						<img src={this.state.image_urls[0]}
+							 width = "800"
+							 height = "600"
 							 id="firstClone"
 							 alt = "dummyImage"  
-							 key="firstClone"/>
+							 key="firstClone"
+							 />
 					</div>
 				</div>
 			</div>

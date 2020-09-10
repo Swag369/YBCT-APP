@@ -4,41 +4,32 @@ import AboutProfile from "./AboutProfile"
 const About = () => {
     return (
     	<div>
-	    	<div style = {{color: "#000000", fontFamily: "'Segoe UI'", width: "60%", margin: "auto", textAlign: "center", fontSize:20}}>
-	        	<div id = "whoweare">
-					<h1 style = {{fontSize: 50}}>Who we are</h1>
-					<p style={{color: "#000000", fontSize: 30}}>We are Youth Bleeding Control Training, or <b>YBCT</b> for short. Our team consists of 9 high school students committed
-					to making a difference within our local community here in the Greater Seattle Area. As students pursuing the International Baccaleaurate Diploma, we have chosen to 
-					address the lack of knowledge and experience around bleeding control and bleeding-related deaths. </p>
-				</div>
-				<div id = "mission">
-					<h1 style = {{fontSize: 50}}>Mission</h1>
-					<p style = {{color: "#000000", fontSize: 30, margin: "50px" }}><i>Educating people about saving lives is our priority.</i></p>
-					<p style={{color: "#000000", fontSize: 30}}>In the United Sates, bleeding control is a major leading cause of preventable death for people of all ages. 
-					This harsh truth is scary, and it demonstrates just how much people need to be educated about dealing with these types of situations. Through our efforts, however,
-					we aim to bring significant change to our local community so that people can be prepared for the worst. We envision a future where people understand and acknowledge the 
+	    	<div>
+				<div className = "container" id = "mission">
+					<h1>Our Mission</h1>
+					<p style = {{color: "#000000", fontSize: 25, width: "100%", float: "left", textAlign: "left"}}><i>Educating people about saving lives is our priority.</i></p>
+					<p style={{fontSize: 20, width: "75%", float: "left", textAlign: "left"}}>In the United Sates, bleeding control is a major leading cause of preventable death for people of all ages. 
+					This harsh truth is scary, and it demonstrates the public's lack of knowledge and experience in dealing with these types of situations. Through our efforts, however,
+					we aim to bring significant change to our local community so that teens and young adults can be prepared for the worst. We envision a future where people understand and acknowledge the 
 					dangers of uncontrolled bleeding. More importantly, we want to directly teach people on how to control bleeding themselves and clear up any stigmas around emergency bleeding situations. 
-					Our goal by the end of the 2021 is to educate at least 200 people in the Greater Seattle Area, if not more.</p>
+					Our goal by the end of the 2021 is to educate at least 200 students in the Greater Seattle Area, if not more.</p>
 				</div>
-				<div id = "strategy">
-					<h1 style = {{fontSize: 50}}>Strategy</h1>
-					<p style={{color: "#000000", fontSize: 30}}>Centered in Bellevue, Washington, we carry out our mission by
-	      		interactively educating local students at various localities. We push ourselves to make a big impact on people's perception of bleeding control,
-				  as well as providing them with the necessary tools to overcome these situations. Through enlisting the help of the Bellevue School District and Bellevue Police Department, 
-				  we are fortunately provided with specialized medical equipment such as tourniquets, gauze packing, first aid boxes, and dummies. We hope that by providing people with
-				  real equipment for live demonstrations and hands-on learning, people can become acquanited with different emergency scenarios much easier, and are more ready to apply them in real life.</p>
+				<div className = "container" id = "strategy">
+					<h1>Our Strategy</h1>
+					<p style = {{fontSize: 25, color: "black", float: "left", textAlign: "left", width: "100%"}}><i>We aim to make our events as interactive and engaging as possible.</i></p>
+					<p style={{ fontSize: 20, width: "75%", float: "left", textAlign: "left"}}>Centered in Bellevue, Washington, we carry out our mission by
+	      			educating students at nearby schools through afterschool events. We push ourselves to make a big impact on people's perception of bleeding control,
+				  as well as provide them with the necessary tools and knowldge for dealing with emergency situations. Through enlisting the help of the Bellevue School District and Bellevue Police Department, 
+				  we are fortunately provided with specialized medical equipment such as tourniquets, gauze packing, first aid boxes, and dummies in hopes of providing people with a
+				  hands-on experience and preparing them to apply bleeding control training in real life scenarios.</p>
 				</div>
-				<p style = {{color: "#000000", fontSize: 20}}>Most recently, we helped familiarize over 20 peers at Interlake High School to dealing with bleeding control situations. By enlisting the help of the Bellevue
-	      		police department, as well as their state-of-the-art bleeding control kits.</p>
-	        	<p style = {{color: "#000000", fontSize: 30, margin: "50px"}}><i>Save lives. Come and learn bleeding control.</i></p>
-	        </div>
-	        <div style = {{display: "block", right: "50%"}}>
-				<h1 id = "people" style = {{color: "#000000", fontSize: 20}}>People</h1>
-	        	<AboutProfile />
-	        	<AboutProfile />
-	        </div>
-	        <div style = {{clear: "both"}}>
-	        </div>
+				<div className = "container" id = "members" style = {{float: "left"}}>
+					<h1>Our Members</h1>
+					<AboutProfile name1 = "Sahi Chitrapu" img1 = {require("/Users/sahi/ybct/src/images/sahi.png")} name2 = "Vikram Khandelwal" name3 = "Saketh Akella"/>
+					<AboutProfile name1 = "Nikhil Devisetty" img1 = {require("/Users/sahi/ybct/src/images/nikhil.png")} name2 = "Aditya Shrey" img2 = {require("/Users/sahi/ybct/src/images/shrey.jpeg")} name3 = "Aditya Khowal"/>
+					<AboutProfile name1 = "Vedant Chavan" name2 = "Wesley Luk" name3 = "Ishan Bansal"/>
+				</div>
+			</div>
 	    </div>
     )
 }
