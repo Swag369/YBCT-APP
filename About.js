@@ -13,6 +13,7 @@ const About = () => {
 					we aim to bring significant change to our local community so that teens and young adults can be prepared for the worst. We envision a future where people understand and acknowledge the 
 					dangers of uncontrolled bleeding. More importantly, we want to directly teach people on how to control bleeding themselves and clear up any stigmas around emergency bleeding situations. 
 					Our goal by the end of the 2021 is to educate at least 200 students in the Greater Seattle Area, if not more.</p>
+					<img src = "https://www.iconfinder.com/data/icons/business-693/96/Business_Arrow_business_goal_target-512.png" width = "200" height = "200" style = {{float: "right"}}></img>
 				</div>
 				<div className = "container" id = "strategy">
 					<h1>Our Strategy</h1>
@@ -22,6 +23,7 @@ const About = () => {
 				  as well as provide them with the necessary tools and knowldge for dealing with emergency situations. Through enlisting the help of the Bellevue School District and Bellevue Police Department, 
 				  we are fortunately provided with specialized medical equipment such as tourniquets, gauze packing, first aid boxes, and dummies in hopes of providing people with a
 				  hands-on experience and preparing them to apply bleeding control training in real life scenarios.</p>
+				  <img src = "https://static.thenounproject.com/png/247310-200.png" width = "200" height = "200" style = {{float: "right"}}></img>
 				</div>
 				<div className = "container" id = "members" style = {{float: "left"}}>
 					<h1>Our Members</h1>
