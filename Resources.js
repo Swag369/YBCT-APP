@@ -5,49 +5,6 @@ const Resources = () => {
   return (
     <>
       <div className="container">
-        <h1>Resources</h1>
-      </div>
-      <div className="container" style={{ marginTop: "20px" }}>
-        <p
-          style={{
-            color: "#000000",
-            width: "100%",
-            float: "left",
-            textAlign: "left",
-          }}
-        >
-          <i style={{ fontSize: "25px" }}>
-            There is no predicting when or where a bleeding injury may happen.
-          </i>
-          <br></br>
-        </p>
-        <div
-          style={{
-            fontSize: 20,
-            width: "75%",
-            float: "left",
-            textAlign: "left",
-            color: "gray",
-          }}
-        >
-          Bleeding Control is one of the most important skills anyone can have.
-          Vehicle Crashes and Firearms are the greatest killers of more teens
-          killing more than 7,000 together. 60% die to preventable injuries{" "}
-          <a href="https://www.sciencedaily.com/releases/2018/12/181219191100.htm">
-            (Science Daily From Michigan Medicine)
-          </a>
-          {". "}
-          According to the American College of Surgeons, uncontrolled bleeding
-          is the number one cause of preventable death from trauma. Anyone who
-          is hurt and losing blood is in severe danger. Unintentional injury
-          related deaths in children are estimated to be 730,000 a year
-          worldwide. At Youth Bleeding Control Training, we look to save lives
-          by teaching adolescents life-saving techniques. Bleeding Control
-          Training gives you the skills to temporarily stop the injured person
-          from loosing blood until Emergency Care arrives.
-        </div>
-      </div>
-      <div className="container" style={{ marginTop: "20px" }}>
         <p
           style={{
             color: "#000000",
@@ -57,48 +14,47 @@ const Resources = () => {
             textAlign: "left",
           }}
         >
-          <b style={{ color: "red" }}>
-            The ABC's of Bleeding Control: Alert, Bleeding, Compress
-          </b>
+          <h1>ABC's of Bleeding Control</h1>
         </p>
         <p
           style={{
             fontSize: 20,
-            width: "750%",
             float: "left",
             textAlign: "left",
             color: "red",
           }}
         >
           <div>
-            <p style={{ color: "red", marginTop: "-10px" }}>
+            <p style={{ color: "red", marginTop: "-10px", fontSize: "125%" }}>
               {" "}
-              A – Alert – call 9-1-1
+              <b className="ABC">A</b>lert – Call 911
             </p>
-            <p style={{ textAlign: "left", color: "red" }}>
+            <p style={{ textAlign: "left", color: "red", fontSize: "125%" }}>
               {" "}
-              B – Bleeding – find the bleeding injury
+              <b className="ABC">B</b>leeding – Find the bleeding injury
             </p>
-            <p style={{ textAlign: "left", color: "red" }}>
+            <p style={{ textAlign: "left", color: "red", fontSize: "125%" }}>
               {" "}
-              C – Compress – apply pressure to stop the bleeding by either
+              <b className="ABC">C</b>ompress – Apply pressure to stop the
+              bleeding by either
               <p
                 style={{
                   color: "red",
                   marginLeft: "50px",
                   fontSize: "90%",
+                  whiteSpace: "nowrap",
                 }}
               >
                 <li>
                   Covering the wound with a clean cloth and applying pressure by
-                  pushing directly on with both hands,
+                  pushing directly on with both hands
                 </li>
                 <br></br>
-                <li>Using a tourniquet,</li>
+                <li>Using a tourniquet</li>
                 <br></br>
                 <li>
                   Packing (stuffing) the wound with gauze or a clean cloth and
-                  then applying pressure with both hands.
+                  then applying pressure with both hands
                 </li>
               </p>
             </p>
@@ -107,7 +63,7 @@ const Resources = () => {
       </div>
       <div
         className="container"
-        style={{ marginTop: "10px", marginBottom: "10px", textAlign: "left" }}
+        style={{ marginBottom: "10px", textAlign: "left" }}
       >
         <h2>To learn more about the topic, check out these resources!</h2>
         <p

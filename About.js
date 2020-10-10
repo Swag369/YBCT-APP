@@ -88,6 +88,63 @@ const About = () => {
             style={{ float: "right" }}
           ></img>
         </div>
+        <div className="container" style={{ display: "inline" }}>
+          <div>
+            <p>
+              <h1>Statistics</h1>
+            </p>
+            <p
+              style={{
+                color: "#000000",
+                width: "100%",
+                float: "left",
+                textAlign: "left",
+              }}
+            >
+              <p>
+                <i style={{ fontSize: "25px" }}>
+                  There is no predicting when or where a bleeding injury may
+                  happen.
+                </i>
+              </p>
+            </p>
+            <div
+              style={{
+                fontSize: 20,
+                width: "75%",
+                float: "left",
+                textAlign: "left",
+                color: "gray",
+              }}
+            >
+              Bleeding Control is one of the most important skills anyone can
+              have. Vehicle Crashes and Firearms are the greatest killers of
+              more teens killing more than 7,000 together. 60% die to
+              preventable injuries{" "}
+              <a href="https://www.sciencedaily.com/releases/2018/12/181219191100.htm">
+                (Science Daily From Michigan Medicine)
+              </a>
+              {". "}
+              According to the American College of Surgeons, uncontrolled
+              bleeding is the number one cause of preventable death from trauma.
+              Anyone who is hurt and losing blood is in severe danger.
+              Unintentional injury related deaths in children are estimated to
+              be 730,000 a year worldwide. At Youth Bleeding Control Training,
+              we look to save lives by teaching adolescents life-saving
+              techniques. Bleeding Control Training gives you the skills to
+              temporarily stop the injured person from losing blood until
+              Emergency Care arrives.
+            </div>
+            <div style={{ float: "right", margin: "0px, 1000px, 5px, 0px" }}>
+              <img
+                src="http://images.clipartpanda.com/statistics-clipart-graph4.png"
+                alt="image of graph lel"
+                width="200"
+                height="200"
+              ></img>
+            </div>
+          </div>
+        </div>
         <div className="container" id="members" style={{ float: "left" }}>
           <h1>Our Members</h1>
           <AboutProfile
@@ -95,8 +152,10 @@ const About = () => {
             img1={require("./images/sahi.png")}
             position1="Web Development"
             name2="Vikram Khandelwal"
+            img2={require("./images/vikram.jpg")}
             position2="Web Development"
             name3="Saketh Akella"
+            img3={require("./images/saketh.png")}
             position3="Web Development"
           />
           <AboutProfile
@@ -107,6 +166,7 @@ const About = () => {
             img2={require("./images/shrey.jpeg")}
             position2="Outreach"
             name3="Aditya Khowal"
+            img3={require("./images/umaru.jpeg")}
             position3="Outreach"
           />
           <AboutProfile
@@ -114,8 +174,10 @@ const About = () => {
             img1={require("./images/vedant.jpg")}
             position1="Outreach"
             name2="Wesley Luk"
+            img2={require("./images/komaru.png")}
             position2="Research Lead"
             name3="Ishan Bansal"
+            img3={require("./images/iida.png")}
             position3="President"
           />
         </div>
