@@ -12,26 +12,66 @@ const Home = () => {
         <div
           style={{
             display: "inline-block",
-            verticalAlign: "middle",
           }}
         >
-          <div style={{ width: "50%", verticalAlign: "middle" }}>
-            <p style={{ textAlign: "left" }}>
-              Youth Bleeding Control Training, or YBCT for short, is a project
-              developed by nine high school students interested in providing
-              teens and young adults bleeding control knowledge and training. We
-              hope that through our efforts, we can give people the needed
-              confidence and know-how for dealing with emergency situations,
-              potentially saving lives.
-            </p>
-
-            {/* <div>            <img              src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/ib-world-school-logo-2-colour.png"              height="100"              width="100"              style={{ float: "left", margin: "0 50px 70px 0" }}            ></img>            <img              src="https://pbs.twimg.com/profile_images/538078248/interlake_400x400.jpg"              height="100"              width="100"              style={{ float: "left", margin: "0 50px 70px 0" }}            ></img>          </div> */}
-            {/* ANCHOR TODO IDK WHY WE HAVE IHS AND IB IMAGES HERE SO I COMMENTED THEM FOR RN  ^^^^^^^^^^^ */}
+          <div
+            style={{
+              color: "gray",
+              float: "left",
+              width: "60%",
+              textAlign: "left",
+              fontSize: "20px",
+              paddingTop: "5%",
+            }}
+          >
+            Youth Bleeding Control Training, or YBCT for short, is a project
+            developed by nine high school students interested in providing teens
+            and young adults bleeding control knowledge and training. We hope
+            that through our efforts, we can give people the needed confidence
+            and know-how for dealing with emergency situations, potentially
+            saving lives.
+            <div style={{ paddingTop: "10vh" }}>
+              <div style={{ marginLeft: "3vw" }}>
+                {" "}
+                <img
+                  src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/ib-world-school-logo-2-colour.png"
+                  height="100"
+                  width="100"
+                  style={{ float: "left", margin: "0 50px 70px 0" }}
+                ></img>{" "}
+              </div>
+              <div style={{ marginLeft: "20vw" }}>
+                {" "}
+                <img
+                  src="https://pbs.twimg.com/profile_images/538078248/interlake_400x400.jpg"
+                  height="100"
+                  width="100"
+                  style={{ float: "left", margin: "0 50px 70px 0" }}
+                ></img>{" "}
+              </div>
+            </div>
           </div>
-
-          <div>
-            <ImageSlider />
+          <div
+            style={{
+              width: "25vw",
+              height: "75vh",
+              display: "inline-block",
+              marginTop: "-15vh",
+            }}
+          >
+            <iframe
+              src="https://www.instagram.com/p/CChbSZ9FTri/embed"
+              frameborder="0"
+              style={{
+                width: "100%",
+                height: "100%",
+                marginRight: "0vw",
+              }}
+            ></iframe>
           </div>
+          {/* ANCHOR TODO IDK WHY WE HAVE IHS AND IB IMAGES HERE SO I COMMENTED THEM FOR RN  ^^^^^^^^^^^ */}
+          {/* <ImageSlider /> */}
+          {/* Imgsldr not working */}
         </div>
       </div>
 
