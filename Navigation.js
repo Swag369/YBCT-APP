@@ -1,108 +1,68 @@
-import React, { useState, useEffect, useRef } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./Navigation.css";
+import React, {useState, useEffect, useRef} from "react"
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import {Navbar, Nav} from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navigation = () => {
-  const [page, setPage] = useState({ currentPage: "Home" });
-  /*
-    const headerRef = useRef(null)
-
-   const handleScroll = (eventO, eventH) => {
-        if(window.pageYOffset > (eventO + eventH)) {
-            setSticky({ isSticky: true, offset: eventH})
-        } else {
-            setSticky({ isSticky: false, offset: 0 })
-        }
+    const [page, setPage] = useState({currentPage: "Home"})
+    const handleHome = () => {
+        setPage({ currentPage: "Home" })
     }
-
-    useEffect(() => {
-        var header = headerRef.current.getBoundingClientRect()
-        const handleScrollEvent = () => {
-            handleScroll(header.top, header.height)
-        }
-        window.addEventListener("scroll", handleScrollEvent)
-
-        return () => {
-            window.removeEventListener("scroll", handleScrollEvent)
-        }
-    }, [])
-*/
-
-  const handleHome = () => {
-    setPage({ currentPage: "Home" });
-  };
-  const handleAbout = () => {
-    setPage({ currentPage: "About" });
-  };
-  const handleResources = () => {
-    setPage({ currentPage: "Resources" });
-  };
-  return (
-    <header>
-      <div className="navbar">
-        <img src={require("./current_logo.jpg")} className="logo"></img>
-        <h2 className="title">Youth Bleeding Control Training</h2>
-        <Link
-          to="/"
-          className="tab"
-          onClick={handleHome}
-          style={
-            page.currentPage == "Home" ? { color: "red" } : { color: "black" }
-          }
-        >
-          Home
-        </Link>
-        <Link
-          to="/About"
-          className="tab"
-          onClick={handleAbout}
-          style={
-            page.currentPage == "About" ? { color: "red" } : { color: "black" }
-          }
-        >
-          About
-        </Link>
-        <Link
-          to="/Resources"
-          className="tab"
-          onClick={handleResources}
-          style={
-            page.currentPage == "Resources"
-              ? { color: "red" }
-              : { color: "black" }
-          }
-        >
-          Resources
-        </Link>
-        <a
-          href="https://docs.google.com/forms/d/1tkpKoNENoyoXDtPdCqJ5o_uH72AaH97nhhQjEM4ilGg/edit"
-          target="_blank"
-          className="tab"
-        >
-          Sign Up
-        </a>
-        <a
-          href="https://www.instagram.com/ybct_saveslives/"
-          target="_blank"
-          className="social"
-        >
-          <img
-            src={require("./images/iconfinder_1_Instagram_colored_svg_1_5296765.png")}
-            width="40"
-            height="40"
-            style={{ marginLeft: 20 }}
-          ></img>
-        </a>
-        <a href="https://discord.gg/JsGXYAV" target="_blank" className="social">
-          <img
-            src={require("./images/iconfinder_91_Discord_logo_logos_4373196.png")}
-            width="45"
-            height="45"
-          ></img>
-        </a>
-      </div>
-    </header>
-  );
-};
+    const handleAbout = () => {
+        setPage({ currentPage: "About"})
+    }
+    const handleResources = () => {
+        setPage({ currentPage: "Resources" })
+    }
+    return (
+        <div style = {{fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"}}>
+            <Navbar bg = "white" variant = "light" fixed = "top" expand = "lg" style = {{boxShadow: "0 2px 4px 0 rgba(0,0,0,.2)"}}>
+                <Navbar.Brand href = "/">
+                    <img
+                    src = {require("./images/current_logo.jpg")}
+                    width = "30"
+                    height = "30"
+                    className = "d-inline-block align-top"
+                    />{' '}
+                    YBCT
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls = "basic-navbar-nav"/>
+                <Navbar.Collapse id = "basic-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/About">About</Nav.Link>
+                        <Nav.Link href = "https://docs.google.com/forms/d/1tkpKoNENoyoXDtPdCqJ5o_uH72AaH97nhhQjEM4ilGg/edit" target = "_blank">Sign Up</Nav.Link>
+                        <Nav.Link href = "https://discord.gg/JsGXYAV" target = "_blank">
+                            <img 
+                                src = {require("./images/real_discord.png")}
+                                width = "20"
+                                height = "20"
+                            />
+                        </Nav.Link>
+                        <Nav.Link href = "https://www.instagram.com/ybct_saveslives" target = "_blank">
+                            {' '}<img 
+                                src = {require("./images/instagram.png")}
+                                width = "20"
+                                height = "20"
+                            />
+                        </Nav.Link>
+                        <Nav.Link href = "" target = "_blank">
+                            {' '}<img 
+                                src = {require("./images/facebook.png")}
+                                width = "20"
+                                height = "20"
+                            />
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+        </div>
+    )
+}
 
 export default Navigation;
