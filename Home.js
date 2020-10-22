@@ -76,7 +76,7 @@ const Home = () => {
                         <h1></h1>
                         <h1></h1>
                         <h1 style = {{textAlign: "center"}}>Our Response to COVID-19</h1>
-                        <p style = {{textAlign: "center"}}>In the midst of a global pandemic, we acknowledge the risks of conducting in-person trainings. As a solution, we have turned to using Zoom to help organize meetings in the most efficient way possible. We invite everyone interested to participate!</p>
+                        <p style = {{textAlign: "center"}}>In the midst of a global pandemic, we acknowledge the risks of conducting in-person trainings. As a solution, we have turned to using Microsoft Teams to help organize meetings in the most efficient way possible. We invite everyone interested to participate!</p>
                         <h3 style = {{textAlign: "center"}}>Want to participate?</h3>
                         <h1></h1>
                         <Button variant = "danger" style = {{display: "block", marginRight: "auto", marginLeft: "auto"}} href = "https://docs.google.com/forms/d/e/1FAIpQLSeuPffsr543cNjxKFIDGemZpp3D2L9CEUBm48kGTCE8fJVWNg/viewform" target = "_blank">Sign up for our next virtual meeting</Button>
@@ -85,7 +85,7 @@ const Home = () => {
                     </Col>
                     <Col>
                         <h1></h1>
-                        <img src = "https://uca.edu/cte/files/2020/07/zoom.png" style = {{display: "block", marginRight: "auto", marginLeft: "auto"}} width = "300" height = "120"/>
+                        <img src = "https://cloud.addictivetips.com/wp-content/uploads/2020/04/Microsoft-Teams-logo.png" style = {{display: "block", marginRight: "auto", marginLeft: "auto"}} width = "300" height = "150"/>
                         <h1></h1>
                         <Accordion>
                             <Card>

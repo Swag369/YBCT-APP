@@ -119,7 +119,7 @@ const About = () => {
 					<Card style = {{margin: "auto", boxShadow: "0 2px 4px 0 rgba(0,0,0,.2)", textAlign: "center", width: "17.5rem"}}>
 						<Card.Img src = "https://media.discordapp.net/attachments/688802349577404454/765316274225283132/unknown.png" height = "250"/>
 						<Card.Title>Aditya Khowal</Card.Title>
-						<Card.Text><a style = {{color: "red"}} href = "malto:s-khowala@bsd405.org">Email: s-khowala@bsd405.org</a></Card.Text>
+						<Card.Text><a style = {{color: "red", overflow: "hidden", height: "auto", width: "auto", maxWidth:"100%"}} href = "malto:s-khowala@bsd405.org">Email: s-khowala@bsd405.org</a></Card.Text>
 					</Card>
 				</Col>
 				<Col>
@@ -164,7 +164,7 @@ const About = () => {
 				</Col>
 				<Col>
 					<a href = "https://www.jems.com/2016/04/04/time-is-blood-when-it-comes-to-hemorrhage-control/">
-						<img src = "https://lh3.googleusercontent.com/proxy/EV5rmLsAnCQFdvYKBOuaUv7wTM-T9_dH2KP4MkZ_SVnWqA6BzhW748IeKCaiWyKuUDo3gTIpHB9S8gea7UMdX7zL0zwrG_b8wTwrFGgtcpDWXU6Tm9ZutTw" width = "256" height = "92" style = {{display: "block", margin: "auto", marginTop: "40px"}}></img>
+						<img src = "https://jems.careers.adicio.com/files/cmsimages/userfiles/88ff99ef3ae393441b3bca4433f5524556833996/files/logo_jems.png" width = "256" height = "92" style = {{display: "block", margin: "auto", marginTop: "40px"}}></img>
 					</a>
 				</Col>
 				<Col>
