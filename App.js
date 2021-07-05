@@ -96,7 +96,7 @@ const About = () => {
           </Col>
         </Row>
         <ScrollAnimation animateIn = "fadeIn">
-          <h1 style = {{fontSize: 150, maxWidth: "80vw"}}>
+          <h1 style = {{fontSize: 150, maxWidth: "80vw", marginRight: "auto", marginLeft: "auto"}}>
             <AnimatedNumber initialValue = {0} value = {100} style = {{fontSize: 150}} duration = {1000} formatValue = {(n) => n.toFixed(0)}></AnimatedNumber>
           +</h1>
           <h1 style = {{textAlign: "center", marginTop: "auto", marginBottom: "auto", display: "block"}}>Students Educated</h1>
