@@ -248,7 +248,7 @@ const Footer = () => {
         {" | "} 
         <a style = {{textDecoration: "none", color: "red"}} href = "https://www.instagram.com/ybct_saveslives/" target = "_blank">Instagram</a>
         {" | "}     
-        <a style = {{textDecoration: "none", color: "red"}} href = "">GitHub</a> 
+        <a style = {{textDecoration: "none", color: "red"}} href = "https://github.com/sahi2slow/YBCT-APP" target = "_blank">GitHub</a> 
       </p>
     </div>
   )
